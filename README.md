@@ -29,3 +29,6 @@ Para este paquete se han utilizado las siguientes librerías:
   ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
   ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
+
+# Guias de uso:
+Para poder utilizarlo primero es necesario
