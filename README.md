@@ -14,6 +14,6 @@ Para este paquete se han utilizado las siguientes librerías:
   roslaunch escondite mapa_1.launch
 
 - YOLOv5:
-  https://github.com/ultralytics/yolov5
-- 
+  Puedes encontrar el código de YOLOv5 en [este repositorio de GitHub](https://github.com/ultralytics/yolov5).
+
 
