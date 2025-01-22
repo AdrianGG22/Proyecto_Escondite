@@ -30,5 +30,18 @@ Para este paquete se han utilizado las siguientes librerías:
   ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 
-# Guias de uso:
-Para poder utilizarlo primero es necesario
+# Guia de uso
+Para poder utilizarlo primero es necesario crearse un workspace donde contener el escondite.<br>
+En caso de no tener uno se puede crear asi:
+```bash
+mkdir escondite_ws
+cd escondite_ws
+mkdir src
+cd src
+```
+Dentro de tu workspace tendras que clonar este repositorio dentro de la carpeta src:
+```bash
+git clone 
+```
+
+
