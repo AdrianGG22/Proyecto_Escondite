@@ -13,4 +13,7 @@ Para este paquete se han utilizado las siguientes librerías:
   ```bash
   roslaunch escondite mapa_1.launch
 
+- YOLOv5:
+  https://github.com/ultralytics/yolov5
+- 
 
