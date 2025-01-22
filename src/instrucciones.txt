@@ -1,0 +1,44 @@
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+ANTES DE TODO
+1. Pegamos el workspace robot_escondite_ws en la carpeta raíz (la carpeta personal de ubuntu)
+
+2. Hacemos catkin_make del workspace
+
+3. Una vez hecho esto, podemos hacer una ejecucción de simulación
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+COMANDOS PARA UNA EJECUCCIÓN SIMULADA
+---------------------------------------------------------------------------------------------------
+1. En una terminal que hayamos hecho source devel/setup.bash, y en la raíz del workspace, hacemos:
+
+roslaunch escondite {mapa_que_elijamos.launch}
+
+Donde {mapa_que_elijamos.launch} es el mapa que queramos utilizar en la simulación, los disponibles son:
+mapa_1.launch
+mapa_2.launch
+mapa_3.launch
+mapa_4.launch
+mapa_empty.launch (este último, no tiene obstáculos de colores para localizar)
+
+---------------------------------------------------------------------------------------------------
+2. Abrimos una nueva terminal en la raíz del workspace y hacemos:
+
+roslaunch turtlebot3_slam turtlebot3_slam.launch
+
+También podemos configurar rviz para que se vea la cámara (se explica en el github)
+
+---------------------------------------------------------------------------------------------------
+3. Abrimos una nueva terminal en la raíz del workspace y hacemos:
+
+roslaunch turtlebot3_navigation move_base.launch
+
+---------------------------------------------------------------------------------------------------
+4. En una nueva terminal en la raíz del workspace, accedemos a la ubicación de la máquina de estados y la lanzamos:
+cd src/escondite/src
+python3 escondite.py
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
