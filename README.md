@@ -1,4 +1,4 @@
-![Captura de pantalla de 2025-01-22 21-28-24](https://github.com/user-attachments/assets/2eddaf64-200f-485e-8fcb-9859d8febb83)# Proyecto_Escondite
+# Proyecto_Escondite
 Este repositorio ha sido creado por:
 - Adrian Gea   
 - Martin Cámara
