@@ -21,6 +21,10 @@ Para este paquete se han utilizado las siguientes librerías:
 - ROS:
   ```bash
   sudo apt install ros-noetic-desktop-full
+
+- ROS:
+  ```bash
+  sudo apt install ros-noetic-desktop-full
   
   
 
