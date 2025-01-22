@@ -1,4 +1,4 @@
-# Proyecto_Escondite
+![Captura de pantalla de 2025-01-22 21-28-24](https://github.com/user-attachments/assets/2eddaf64-200f-485e-8fcb-9859d8febb83)# Proyecto_Escondite
 Este repositorio ha sido creado por:
 - Adrian Gea   
 - Martin Cámara
@@ -8,7 +8,7 @@ Este repositorio ha sido creado por:
 Este paquete de ROS Noetic tiene el objetivo de realizar una tarea donde el robot tenga que buscar caras y objetos con colores distintos por todo el mapa. En este caso para la detección de caras se ha utilizado el modelo de visión por computadora YOLOv5, una versión de optimizada de YOLO con la capacidad de ejecutarse en tiempo real, y para la detección de colores se ha modelado una cámara en gazebo para el turtlebot 3 que le permitirá diferenciar los colores que estén dentro de cierto umbral.
 </p>
 
-![Captura de pantalla de 2025-01-22 21-28-24](https://github.com/user-attachments/assets/f3f25cb3-f18e-4db0-853f-61052bc614da)
+![Mapa_1](https://github.com/user-attachments/assets/bd64f1df-ec6f-4266-950d-ae8a311af95f)
 
 Para este paquete se han utilizado las siguientes librerías:
 - Turtlebot3:
@@ -24,7 +24,8 @@ Para este paquete se han utilizado las siguientes librerías:
 - Explore_lite:<br>
   [Link a su repositorio](https://github.com/hrnr/m-explore).
   ```bash
-  sudo apt install ros-noetic-multirobot-map-merge ros-noetic-explore-lite # Este es la instalación especifica para el paquete (Ros Noetic)
+  # Este es la instalación especifica para el paquete (Ros Noetic)
+  sudo apt install ros-noetic-multirobot-map-merge ros-noetic-explore-lite 
   ```
   
 
@@ -74,6 +75,21 @@ roslaunch escondite mapa_3.launch
 roslaunch escondite mapa_4.launch
 roslaunch escondite mapa_empty.launch #Este último, no tiene obstáculos de colores para localizar
 ```
+En una terminal nueva ejecutamos el mapeado del turtlebot3:
 
-En una terminal nueva ejecutamos la siguiente linea
+```bash
+# Al ejecutar el siguiente comando se puede añadir en Rviz el display
+# de "Image" y poner el topic "/image_raw" para tener la cámara del robot
+roslaunch turtlebot3_slam turtlebot3_slam.launch
+```
+De nuevo, en una nueva terminal se ejecuta la navegacion del turtlebot3:
+```bash
+roslaunch turtlebot3_navigation move_base.launch
+```
+Por último, en una nueva terminal accedemos a la carpeta src del paquet para ejecutar el codigo "escondite.py":
+```bash
+cd src/escondite/src
+python3 escondite.py
+```
+
 
