@@ -11,9 +11,17 @@ Este paquete de ROS tiene el objetivo de realizar una tarea donde el robot tenga
 Para este paquete se han utilizado las siguientes librerías:
 - Turtlebot3:
   ```bash
-  roslaunch escondite mapa_1.launch
+  sudo apt install ros-noetic-dynamixel-sdk
+  sudo apt install ros-noetic-turtlebot3-msgs
+  sudo apt install ros-noetic-turtlebot3
 
 - YOLOv5:<br>
   [Link a su repositorio](https://github.com/ultralytics/yolov5).
+
+- ROS:
+  ```bash
+  sudo apt install ros-noetic-desktop-full
+  
+  
 
 
