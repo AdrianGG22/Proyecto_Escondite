@@ -91,5 +91,5 @@ Por último, en una nueva terminal accedemos a la carpeta src del paquet para ej
 cd src/escondite/src
 python3 escondite.py
 ```
-
+Tras todas estas ejecucione sel programa deberia perdirte elegir entre la deteccionde personas "p" o de colores "c", una vez lo elijas el robot empazara a moverse.
 
