@@ -10,6 +10,7 @@ Este paquete de ROS Noetic tiene el objetivo de realizar una tarea donde el robo
 
 <p align="center">
 ![Captura de pantalla de 2025-01-22 21-28-24](https://github.com/user-attachments/assets/c2f3409c-4a70-46d2-b695-e29077700ce5)
+![Captura de pantalla de 2025-01-22 19-48-01](https://github.com/user-attachments/assets/64bcc661-14d3-4b56-b1c5-d7b9bbde43a9)
 
 </p>
 Para este paquete se han utilizado las siguientes librerías:
